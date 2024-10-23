@@ -1,0 +1,33 @@
+.otp-input {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.otp-input-group {
+    display: flex;
+    justify-content: center;
+}
+
+.timer-text {
+    font-size: 14px;
+}
+
+ /* OTP Button */
+ .btn-otp {
+    background: linear-gradient(90deg, #f16012 0%, #e4af00 100%);
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 30px;
+  }
+  
+  .btn-otp:hover {
+    background: linear-gradient(90deg, #f97c3b 10%, #fbc30b 90%);
+    color: black;
+  }

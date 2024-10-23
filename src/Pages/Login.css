@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.image h2 {
+    color: #ee6a42;
+
+}
+.image h2 span{
+    color: black;
+}
+a{
+    color: #ee6a42 !important;
+}
