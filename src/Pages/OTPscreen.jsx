@@ -74,8 +74,9 @@ function OTPscreen() {
             <div className="row vh-100">
                 {/* Left section with image */}
                 <div className="col-lg-6 d-lg-flex align-items-center justify-content-center" style={{ backgroundColor: "#eff4f9" }}>
+               
                     <div className="image">
-                        <h2 className="mt-5 mb-5 ms-3">Dash<span>Stack</span></h2>
+                    <h2 className="mt-1 mb-5 ms-3">Dash<span>Stack</span></h2>
                         <img src="src/image/Group1.jpg" alt="Reset your password" className="img-fluid" />
                     </div>
                 </div>

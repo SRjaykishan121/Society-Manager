@@ -27,8 +27,9 @@ const ResetPassword = () => {
       <div className="row vh-100">
         {/* Left Image Section with background-color */}
         <div className="col-lg-6 d-flex align-items-center justify-content-center" style={{ backgroundColor: "#eff4f9" }}>
+        
           <div className="image-section">
-            <h2 className="mt-5 mb-5 ms-3">Dash<span>Stack</span></h2>
+          <h2 className="mt-1 mb-5 ms-3">Dash<span>Stack</span></h2>
             <img src="src/image/Group2.png" alt="DashStack" className="img-fluid mb-3" />
           </div>
         </div>
