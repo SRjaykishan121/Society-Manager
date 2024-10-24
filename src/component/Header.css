@@ -1,0 +1,32 @@
+.notification-dropdown {
+    border-radius: 8px;
+    z-index: 1000;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .notification-dropdown ul {
+    padding-left: 0;
+  }
+  
+  .notification-dropdown li {
+    padding: 8px 0;
+  }
+  
+  .notification-dropdown li:not(:last-child) {
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .notification-dropdown button {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  .notification-dropdown h6 {
+    font-weight: bold;
+  }
+  
+  .badge {
+    font-size: 0.75rem;
+  }
+  

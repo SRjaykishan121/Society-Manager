@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
+import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 import './Login.css';
 
 function Login() {
@@ -15,10 +15,11 @@ function Login() {
     return (
         <div className="container-fluid">
             <div className="row vh-100">
+           
                 {/* Image Section */}           
                 <div className="col-lg-6 d-lg-flex align-items-center justify-content-center" style={{backgroundColor:"#eff4f9"}}>
                     <div className="image">
-                        <h2 className="mt-5 mb-5 ms-3">Dash<span>Stack</span></h2>
+                    <h2 className="mt-5 mb-5 ms-3">Dash<span>Stack</span></h2>
                         <img src="src/image/Group1.jpg" alt="DashStack" className="img-fluid" />
                     </div>
                 </div>
@@ -66,7 +67,7 @@ function Login() {
                                 </button>
                             </div>
                             <div className="text-center mt-3">
-                                <a href="/forget" className="text-decoration-none">Forgot Password?</a>
+                                <Link to="/forget" className="text-decoration-none">Forgot Password?</Link>
                             </div>
                             <div className="text-center mt-2">
                                 <p>

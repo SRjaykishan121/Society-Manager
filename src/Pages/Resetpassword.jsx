@@ -21,7 +21,7 @@ const ResetPassword = () => {
     <div className="container vh-100 d-flex align-items-center justify-content-center">
       <div className="row w-100">
         {/* Left Image Section with background-color */}
-        <div className="col-lg-6  d-lg-flex align-items-center justify-content-center" style={{backgroundColor:"#eff4f9"}}>
+        <div className="col-lg-6  d-lg-flex align-items-center justify-content-center mb-3" style={{backgroundColor:"#eff4f9"}}>
                     <div className="image p-5">
                         <h2 className="mt-5 mb-5 ms-3"><span></span></h2>
                         <img src="src/image/Group2.png" alt="Reset your password" className="img-fluid" />
@@ -29,7 +29,7 @@ const ResetPassword = () => {
                 </div>
 
         {/* Right Form Section */}
-        <div className="col-lg-6 d-flex align-items-center justify-content-center">
+        <div className="col-lg-6 d-flex  align-items-center justify-content-center">
           <div className="card p-4 shadow" style={{ maxWidth: '400px', width: '100%' }}>
             <h2 className="text-center mb-4">Reset Your Password</h2>
             <form onSubmit={handleSubmit}>

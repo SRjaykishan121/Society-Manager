@@ -2,6 +2,7 @@ import React from 'react';
 import './ForgetPassword.css'; // Create this CSS for custom styles
 import { Link } from 'react-router-dom';
 
+
 const ForgetPassword = () => {
   return (
     <div className="container-fluid">

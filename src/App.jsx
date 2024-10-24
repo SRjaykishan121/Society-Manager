@@ -5,6 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.js'
 import Forgetpassword from "./Pages/Forgetpassword"
 import OTPscreen from "./Pages/OTPscreen"
 import ResetPassword from "./Pages/Resetpassword"
+import Header from "./component/Header"
 
 function App() {
   
@@ -13,7 +14,8 @@ function App() {
     <>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Login/>}/>
+        <Route path="/" element={<Header/>}/>
+        <Route path="/login" element={<Login/>}/>
         <Route path="/forget" element={<Forgetpassword/>}/>
         <Route path="/otp" element={<OTPscreen/>}/>
         <Route path="/resetpass" element={<ResetPassword/>}/>
