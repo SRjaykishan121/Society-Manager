@@ -6,6 +6,7 @@ import Forgetpassword from "./Pages/Forgetpassword"
 import OTPscreen from "./Pages/OTPscreen"
 import ResetPassword from "./Pages/Resetpassword"
 import Header from "./component/Header"
+import EditProfile from "./component/EditProfile"
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
         <Route path="/forget" element={<Forgetpassword/>}/>
         <Route path="/otp" element={<OTPscreen/>}/>
         <Route path="/resetpass" element={<ResetPassword/>}/>
+        <Route path="/Editpro" element={<EditProfile/>}/>
       </Routes>
     </BrowserRouter>
        
