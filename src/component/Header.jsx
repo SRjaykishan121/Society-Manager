@@ -97,7 +97,7 @@ const Header = () => {
                 <img
                   src="src/image/Avatar.png"
                   alt="User"
-                  className="rounded-circle me-2 img-fluid"
+                  className=" me-2 img-fluid"
                   width="40"
                   height="40"
                 />
