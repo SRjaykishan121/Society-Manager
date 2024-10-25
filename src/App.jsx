@@ -7,7 +7,7 @@ import OTPscreen from "./Pages/OTPscreen"
 import ResetPassword from "./Pages/Resetpassword"
 import Header from "./component/Header"
 import EditProfile from "./component/EditProfile"
-
+import Residentmanagement from "./component/Residentmanagement"
 function App() {
   
 
@@ -21,6 +21,7 @@ function App() {
         <Route path="/otp" element={<OTPscreen/>}/>
         <Route path="/resetpass" element={<ResetPassword/>}/>
         <Route path="/Editpro" element={<EditProfile/>}/>
+        <Route path="/residentmanage" element={<Residentmanagement/>}/>
       </Routes>
     </BrowserRouter>
        
