@@ -8,6 +8,8 @@ import ResetPassword from "./Pages/Resetpassword"
 import Header from "./component/Header"
 import EditProfile from "./component/EditProfile"
 import Residentmanagement from "./component/Residentmanagement"
+import Ownerscreen from "./component/Ownerscreen"
+import Tenantscreen from "./component/Tenantscreen"
 function App() {
   
 
@@ -22,6 +24,8 @@ function App() {
         <Route path="/resetpass" element={<ResetPassword/>}/>
         <Route path="/Editpro" element={<EditProfile/>}/>
         <Route path="/residentmanage" element={<Residentmanagement/>}/>
+        <Route path="/owner" element={<Ownerscreen/>}/> 
+        <Route path="/tanent" element={<Tenantscreen/>}/>
       </Routes>
     </BrowserRouter>
        

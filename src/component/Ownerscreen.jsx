@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import './FormUI.css'; // Custom CSS file for detailed styling
 import { FaAngleUp } from "react-icons/fa";
+import { IoIosRemoveCircle } from "react-icons/io";
+import { RiDeleteBin5Fill } from "react-icons/ri";
+import { Link } from 'react-router-dom';
 
-const OwnerForm = () => {
+const Ownerscreen = () => {
     const [formData, setFormData] = useState({
         fullName: '',
         phoneNo: '',
@@ -46,11 +49,9 @@ const OwnerForm = () => {
         <div className="container-fluid form-container" style={{ backgroundColor: "#eff4f9" }}>
             <div className="row justify-content-center ">
                 <div className="col-lg-10">
-                <button className="rounded-top border-top-only btn btn-primary">Owner</button>
-                <button className="rounded-top border-top-only btn btn-light">Tenant</button>
+                    <button className="rounded-top border-top-only btn btn-primary">Owner</button>
+                    <Link to="/tanent" className="rounded-top border-top-only btn btn-light text-dark">Tenant</Link>
                     <form onSubmit={handleSubmit} className=' border p-4 rounded shadow bg-white'>
-                        {/* <h3 className="form-title mb-4">Owner/Tenant Information</h3> */}
-
                         {/* Flexbox or grid for image on left and form on the right */}
                         <div className="row">
                             {/* Left Side Image inside the form */}
@@ -183,41 +184,98 @@ const OwnerForm = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="row mb-3">
-                            
+                        <div className="row mb-4">
+                            <div className="col-md-3 mx-auto">
+                                <div className=" border border-2 rounded mx-auto d-flex flex-wrap align-items-center p-2">
+                                    <img src="src/image/img2.png" alt="" className=" me-2" />
+                                    <h6 className='img-font'>Syncfusion Essential Adharcard JPG</h6><IoIosRemoveCircle className='mb-2 text-secondary' />
+                                    <span className='ms-5 text-secondary mb-3' style={{marginTop:"-20px", fontSize:"12px"}}>3.5 MB</span>
+                                    <div className="">
+                                        {/* with label*/}
+                                        <div className="progress mt-2">
+                                            <div className="progress-bar" role="progressbar" aria-valuenow={40} aria-valuemin={0} aria-valuemax={100} style={{ width: '40%' }}>
+                                                40%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                </div>
+                            </div>
+
+                            <div className="col-md-3 mx-auto">
+                                <div className=" border border-2 rounded mx-auto d-flex flex-wrap align-items-center p-2">
+                                    <img src="src/image/img2.png" alt="" className=" me-2 mt-3" />
+                                    <h6 className='img-font'>Syncfusion Essential Adharcard JPG</h6><RiDeleteBin5Fill className='mb-2'/>
+
+                                    <span className='ms-5 text-secondary mb-3' style={{marginTop:"-20px", fontSize:"12px"}}>3.5 MB</span>
+                                </div>
+                                <div>
+                                </div>
+                            </div>
+
+                            <div className="col-md-3 mx-auto">
+                                <div className=" border border-2 rounded mx-auto d-flex flex-wrap align-items-center p-2">
+                                    <img src="src/image/img2.png" alt="" className=" me-2 mt-3" />
+                                    <h6 className='img-font'>Syncfusion Essential Adharcard JPG</h6><RiDeleteBin5Fill className='mb-2'/>
+
+                                    <span className='ms-5 text-secondary mb-3' style={{marginTop:"-20px", fontSize:"12px"}}>3.5 MB</span>
+                                </div>
+                                <div>
+                                </div>
+                            </div>
+
+                            <div className="col-md-3 mx-auto">
+                                <div className=" border border-2 rounded mx-auto d-flex flex-wrap align-items-center p-2">
+                                    <img src="src/image/img2.png" alt="" className=" me-2" />
+                                    <h6 className='img-font'>Syncfusion Essential Adharcard JPG</h6><IoIosRemoveCircle className='mb-2 text-secondary' />
+                                    <span className='ms-5 text-secondary mb-3' style={{marginTop:"-20px", fontSize:"12px"}}>3.5 MB</span>
+                                    <div className="">
+                                        {/* with label*/}
+                                        <div className="progress mt-2">
+                                            <div className="progress-bar" role="progressbar" aria-valuenow={40} aria-valuemin={0} aria-valuemax={100} style={{ width: '40%' }}>
+                                                60%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                </div>
+                            </div>
+
                         </div>
 
                         {/* Member Details */}
-                       
+
                     </form>
                     <form className='mt-5 border p-4 rounded shadow bg-white'>
-                   <div className="d-flex justify-content-between">
-                   <h4>Member Details</h4>
-                   <div className="">
-                   <h6>Select Member <button className='btn border'>5 <FaAngleUp /></button></h6>
-                   {/* <button type="submit" className="btn btn-primary">Submit</button> */}
-                   </div>
-                   </div>
+                        <div className="d-flex justify-content-between">
+                            <h4>Member Details</h4>
+                            <div className="">
+                                <h6>Select Member <button className='btn border'>5 <FaAngleUp /></button></h6>
+                                {/* <button type="submit" className="btn btn-primary">Submit</button> */}
+                            </div>
+                        </div>
                         {formData.members.map((member, index) => (
                             <div className="row mb-3" key={index}>
                                 <div className="col-md-2">
-                                     <label>Full Name<span className='text-danger'>*</span></label>
+                                    <label>Full Name<span className='text-danger'>*</span></label>
                                     <input type="text" className="form-control" name="fullName" placeholder="Enter Full Name" value={member.fullName} onChange={(e) => handleMemberChange(index, e)} />
                                 </div>
                                 <div className="col-md-2">
-                                <label>Phone No<span className='text-danger'>*</span></label>
+                                    <label>Phone No<span className='text-danger'>*</span></label>
                                     <input type="tel" className="form-control" name="phoneNo" placeholder="+91" value={member.phoneNo} onChange={(e) => handleMemberChange(index, e)} />
                                 </div>
                                 <div className="col-md-2">
-                                <label>Email<span className='text-danger'>*</span></label>
+                                    <label>Email<span className='text-danger'>*</span></label>
                                     <input type="email" className="form-control" name="email" placeholder="Enter Email Address" value={member.email} onChange={(e) => handleMemberChange(index, e)} />
                                 </div>
                                 <div className="col-md-2">
-                                <label>Age<span className='text-danger'>*</span></label>
+                                    <label>Age<span className='text-danger'>*</span></label>
                                     <input type="number" className="form-control" name="age" placeholder="Age" value={member.age} onChange={(e) => handleMemberChange(index, e)} />
                                 </div>
                                 <div className="col-md-2">
-                                <label>Gender<span className='text-danger'>*</span></label>
+                                    <label>Gender<span className='text-danger'>*</span></label>
                                     <select className="form-control" name="gender" value={member.gender} onChange={(e) => handleMemberChange(index, e)}>
                                         <option value="">Gender</option>
                                         <option value="Male">Male</option>
@@ -226,7 +284,7 @@ const OwnerForm = () => {
                                     </select>
                                 </div>
                                 <div className="col-md-2">
-                                <label>Age<span className='text-danger'>*</span></label>
+                                    <label>Age<span className='text-danger'>*</span></label>
                                     <input type="number" className="form-control" name="age" placeholder="Age" value={member.age} onChange={(e) => handleMemberChange(index, e)} />
                                 </div>
                             </div>
@@ -238,4 +296,4 @@ const OwnerForm = () => {
     );
 };
 
-export default OwnerForm;
+export default Ownerscreen;
