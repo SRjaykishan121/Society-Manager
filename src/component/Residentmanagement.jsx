@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './FormUI.css'; // Custom CSS file for detailed styling
 import { FaAngleUp } from "react-icons/fa";
+import Header from './Header';
 
 const OwnerForm = () => {
     const [formData, setFormData] = useState({
@@ -43,7 +44,9 @@ const OwnerForm = () => {
     };
 
     return (
+       
         <div className="container-fluid form-container" style={{ backgroundColor: "#eff4f9" }}>
+             <Header/>
             <div className="row justify-content-center ">
                 <div className="col-lg-10">
                 <button className="rounded-top border-top-only btn btn-primary">Owner</button>
